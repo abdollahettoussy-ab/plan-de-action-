@@ -13,20 +13,106 @@
         <img src="img/logo.png" alt="logo" class="w-[200px] h-[100px] ">
         <nav id="menu" class="text-2xl capitaliz  gap-[10px] px-[10px] text-white">
             <a href="#acceuil">Acceuil</a>
-            <a href="#setvices">Services</a>
+            <a href="#presentation">Services</a>
             <a href="#contact">Contact</a>
 
         </nav>
     </header>
-    <section id="acceuil" class="w-[90%] h-screen flex justify-between py-64">
-        <div class="px-[-20px]">
-        <h1 class="text-white text-3xl">Bienvenue chez Atlas Créations</h1>
-        <p class="text-white text-xl">Bienvenue sur le site d'Atlas Créations. Ici, vous trouverez tout ce dont vous avez besoin pour digitaliser votre activité artisanale.</p>
-        </div>
-        <img src="img/hero.jpg" alt="hero" data-role="hero" class="w-[550px] h-[300px] rounded-2xl ">
-    </section>
-    <section id="services"></section>
-    <section id="contact"></section>
+    <main>
+        <section id="acceuil" class="w-[90%] h-screen flex justify-between py-64 px-[20px]">
+            <div class="px-[-20px]">
+                <h1 class="text-white text-3xl">Bienvenue chez Atlas Créations</h1>
+                <p class="text-white text-xl">Bienvenue sur le site d'Atlas Créations. Ici, vous trouverez tout ce dont
+                    vous
+                    avez besoin pour digitaliser votre activité artisanale.</p>
+            </div>
+            <img src="img/hero.jpg" alt="hero" data-role="hero" class="w-[550px] h-[300px] rounded-2xl ">
+        </section>
+        <section id="presentation" class="grid place-items-center">
+            <div class="w-[500px] h-[170px] text-white rounded-md">
+                <h2 class="grid place-items-center text-3xl">Notre Services</h2>
+                <p>Découvrez nos solutions digitales
+                    sur-mesure, conçues spécialement
+                    pour accompagner les artisans
+                    marocains et donner à leur savoir-faire
+                    la visibilité qu'il mérite.</p>
+                <button id="btn"
+                    class="border border-solid border-black bg-red-400 rounded-md mt-[20px] px-[20px] ml-[20px]">Notre
+                    Services</button>
+                <ul id="service-list" class="py-[10px] px-[20px]">
+
+                    <button id="btnn" class="border rounded-md bg-yellow-700  hover:bg-yellow-400 ">Ajouter un
+                        service</button>
+                </ul>
+            </div>
+        </section>
+        <section id="temoignages" class="border border-solid rounded-2xl h-[300px] w-[700px]  py-[20px] mt-[40px]">
+            <div class="testimonial">
+                <div class="testimonial">
+                    <blockquote class="text-xl text text-stone-500">Grâce à Atlas Créations, mon atelier de poterie a
+                        enfin une vitrine moderne. Mes clients
+                        peuvent découvrir mes créations facilement avant même de me rendre visite.</blockquote>
+                    <cite class="text-stone-100">Hassan Bennani, Maître potier à Safi</cite>
+                    <button class="border rounded-md bg-white">Détails</button>
+                </div>
+                <div class="testimonial">
+                    <blockquote class="text-xl text-stone-500">Une équipe à l'écoute qui a su comprendre l'âme de notre
+                        coopérative. Notre nouveau site met
+                        parfaitement en valeur le travail de nos tisseuses.</blockquote>
+                    <cite class=" text-stone-100">Fatima Zahra, Coopérative de tapis berbères à Tazenakht</cite>
+                    <button class="border rounded-md bg-white">Détails</button>
+                </div>
+                <div class="testimonial">
+                    <blockquote class="text-xl text-stone-500">recevons des commandes de tout le Maroc et même de
+                        l'étranger. Un accompagnement
+                        professionnel et efficace.</blockquote>
+                    <cite class=" text-stone-100">Youssef El Mansouri, Artisan dinandier à Fès</cite>
+                    <button class="border rounded-md bg-white">Détails</button>
+                </div>
+        </section>
+        <section id="produits">
+            <ul id="productList" class="flex space-between gap-44 mt-[20px] ">
+                <li>
+                    <h3 class="text-2xl text-red-100 ">Design graphique</h3>
+                    <p class="text-xl text-red-50">Prix : 500 DH</p>
+                    <button class="border rounded-md bg-yellow-500" >Ajouter</button>
+                </li>
+                <li>
+                    <h3 class="text-2xl text-red-100 ">Création site web</h3>
+                    <p class="text-xl text-red-50">Prix : 1500 DH</p>
+                    <button class="border rounded-md bg-yellow-500">Ajouter</button>
+                </li>
+            </ul>
+            <ul id="cartItems"></ul>
+            <p>Total:<span id="total">0</span></p>
+        </section>
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+            <p>Vous êtes artisan et vous souhaitez lancer votre site vitrine ? Remplissez ce formulaire, notre équipe vous répondra sous 24h.</p>
+            <form action="" id="contactForm">
+                <label for="nome" id="name" >Nom</label>
+                <input type="name" name="Nom" id="name" placeholder="Votre nom et prenom">
+
+                <label for="" id="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Entrer Email">
+
+                <label for="" id="message">Message</label>
+                <input type="text" id="message" placeholder="Votre message">
+
+                <button id="btnSubmit">Soumettre</button>
+                
+            </form>
+            
+
+
+        </section>
+        <dialog id="modale" class="w-[420px] h-[200px] rounded-xl border border-blue-800 px-[10px]">
+            <h2>Contact Direct</h2>
+            <p>location:https://maps.app.goo.gl/55J8WWoJ6bUyRBR78</p>
+            <p>Télé:0522369487/0502369874</p>
+            <p>Email:atlascreation@gmail.com</p>
+        </dialog>
+    </main>
 
 </body>
 
